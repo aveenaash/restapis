@@ -24,6 +24,7 @@ public class PassengerController {
 		dto.setEmail("sde@gmail.com");
 		dto.setGender("Male");
 		dto.setPhone("1312431234");
+
 		
 		return dto;
 		

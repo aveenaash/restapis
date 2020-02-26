@@ -9,6 +9,13 @@
 	<bean id="passController"
 		class="com.rab3.controllers.PassengerController"></bean>
 
+	<bean id="flightController"
+		class="com.rab3.controllers.FlightController">
+		<property name="flightService" ref="flightService"></property>
+	</bean>
+
+	<bean id="flightService" class="com.rab3.services.FlightService"></bean>
+
 	<mvc:annotation-driven>
 		<mvc:message-converters>
 			<bean
